@@ -54,7 +54,7 @@ pages show a "not configured" notice, and every protected route redirects to sig
 | Variable | Required | Purpose |
 | --- | --- | --- |
 | `NEXT_PUBLIC_SUPABASE_URL` | Yes | Supabase project URL |
-| `NEXT_PUBLIC_SUPABASE_ANON_KEY` | Yes | Supabase anon (publishable) key. Public by design; RLS protects the data |
+| `NEXT_PUBLIC_SUPABASE_PUBLISHABLE_KEY` (or `NEXT_PUBLIC_SUPABASE_ANON_KEY`) | Yes | Supabase publishable (anon) key. Public by design; RLS protects the data |
 | `NEXT_PUBLIC_SITE_URL` | Yes in production | Public origin, used in email and invitation links. Defaults to `http://localhost:3000` |
 | `SUPABASE_SERVICE_ROLE_KEY` | No | **Only** for `npm run seed:demo`, from your own shell. The app never reads it. Do not add it to your host |
 | `DEMO_USER_PASSWORD`, `DEMO_SEED_CONFIRM` | No | Demo seed script only |
